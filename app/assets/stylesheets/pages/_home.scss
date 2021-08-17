@@ -1,7 +1,9 @@
 // Specific CSS for your home-page
 
 @import "global";
-
+#home {
+  height: 100vh;
+}
 .home-background {
   background-color: $primaryColor;
   border-radius: 30vh;
@@ -70,20 +72,26 @@ p {
 .job, .school {
   display: flex;
   justify-content: space-between;
-  margin: 20%;
+  margin: 20% 10% 0 10%;
 }
 
 .dot {
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  color: $secondaryColor;
+  background-color: $secondaryColor;
+  display: inline-block;
 }
 
 #experience {
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  .info {
+    // padding-left: 80px;
+    // padding-left: 30%;
+    // border-left: 2px solid $secondaryColor;
+  }
 }
 
 #languages {
@@ -146,4 +154,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  .contact-icons{
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
 }
