@@ -62,7 +62,8 @@ p {
 }
 
 #work {
-  background-color: $bgColor;
+  // background-color: $bgColor;
+  height: 100vh;
 }
 
 .top-content {
@@ -79,8 +80,32 @@ p {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  background-color: $primaryColor;
+  display: inline-block;
+  position: absolute;
+  right: 51%;
+  top: 16%;
+}
+
+.dot-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid $secondaryColor;
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  background-image: image-url('design.png');
+  background-size: contain;;
+}
+
+.vertical-line {
+  height: 80vh;
+  width: 1px;
   background-color: $secondaryColor;
   display: inline-block;
+  position: absolute;
+  right: 54.5%;
 }
 
 #experience {

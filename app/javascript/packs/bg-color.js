@@ -1,8 +1,10 @@
-document.addEventListener("scroll touchmove", function = () => {
+document.addEventListener("scroll", function = () => {
   if (document.scrollTop >= document.querySelector("#work").top) {
   document.querySelector('body').classList.add('bg-colored');
 }
 });
+
+// touchmove
 
 
 // var one = "#11cf72",
