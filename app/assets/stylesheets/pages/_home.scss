@@ -1,1 +1,51 @@
 // Specific CSS for your home-page
+.home-background {
+  background-color: #CC7373;
+  border-radius: 148px 148px;
+  width: 80%;
+  height: 120vh;
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+}
+
+.home-avatar {
+  background-image: image_url('profile-home.png');
+  background-position: left bottom;
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  border-radius: 148px 148px;
+  height: 100vh;
+  width: 80%;
+  position: relative;
+  bottom: 130vh;
+  left: 10vh;
+  z-index: 1;
+  display: inline-block;
+}
+
+.home-intro {
+  font-family: Maitree;
+  padding: 40vh 15vh;
+  h3 {
+    color: #CC7373;
+    font-family: Maitree;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.home-profile h1 {
+  font-family: Monoton;
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  position: relative;
+  right: 25vh;
+  top: 50vh;
+  z-index: 2;
+}
+
+.home-info {
+  display: flex;
+  justify-content: space-between;
+}
