@@ -1,19 +1,38 @@
 <div class="container">
-  <div class="home-info">
-    <div class="home-profile">
+  <div class="home-info row" id="home">
+    <div class="home-profile col col-md-6 col-sm-12">
       <h1>Patrycja</h1>
       <div class="home-background">
       </div>
       <div class="home-avatar">
       </div>
     </div>
-    <div class="home-intro">
+    <div class="home-intro col col-md-6 col-sm-12">
       <h3>Web designer</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac.</p>
       <%= link_to 'Meet me!', about_path, class:"btn btn-main" %>
-  <!--     <div class="btn btn-main">
-        <p>Meet me!</p>
-      </div> -->
+      <%= link_to("Say hi!", root_path(:anchor => "contact"), class:"btn btn-main") %>
     </div>
+  </div>
+  <div id="work">
+    <%= render 'shared/home_carousel_multiple' %>
+  </div>
+  <div id="experience">
+  </div>
+  <div id="languages">
+  </div>
+  <div id="skills">
+  </div>
+  <div id="about">
+  </div>
+  <div id="contact">
+  </div>
+  <div class="footer">
+    <div class="contact-icons">
+      <i class="fab fa-github-square"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-facebook-square"></i>
+    </div>
+    <p>Copyright by Patrycja Miękina 2021</p>
   </div>
 </div>
