@@ -1,0 +1,38 @@
+@import "global";
+
+.pulse {
+  border-radius: 50%;
+  width: 150vh;
+  height: 150vh;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(204, 115, 115, 0.8) 0%, rgba(255, 198, 146, 0.32) 57.29%, rgba(249, 254, 255, 0.64) 100%);
+  filter: blur(4px);
+  z-index: -100;
+  animation: pulse 5s infinite ease-out;
+}
+
+.pulse-one {
+  position: absolute;
+  bottom: -70%;
+  left: -15%;
+}
+
+.pulse-two {
+  position: absolute;
+  top: 550%;
+  right: -5%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

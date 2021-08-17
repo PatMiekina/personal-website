@@ -10,7 +10,7 @@
     <div class="home-intro col col-md-6 col-sm-12">
       <h3>Web designer</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac.</p>
-      <%= link_to 'Meet me!', about_path, class:"btn btn-main" %>
+      <%= link_to( 'Meet me!', root_path(:anchor => "about"), class:"btn btn-main") %>
       <%= link_to("Say hi!", root_path(:anchor => "contact"), class:"btn btn-main") %>
     </div>
   </div>
@@ -60,12 +60,37 @@
       <p>description</p>
     </div>
   </div>
+  <div id="endorsements">
+    <div class="endorsement">
+      <img src="/assets/quote.png" alt="">
+      <div class="endorsement-text">
+        <p>Patrycja is creative and not afraid to experiment with ideas, good at receiving feedback. She is always dependable, organised and efficient.</p>
+        <h6>Zefa Mongan, MCM Architecture</h6>
+      </div>
+    </div>
+    <div class="endorsement">
+      <img src="/assets/quote.png" alt="">
+      <div class="endorsement-text">
+        <p>I am impressed by how passionate, excited and inspired Patrycja is. She is always doing above and beyond. Her design is considered with attention to ‘the why’. </p>
+        <h6>Terri Scott, MCM Architecture</h6>
+      </div>
+    </div>
+  </div>
   <div id="about">
+    <div class="about d-flex justify-content-space-between">
+      <img src="/assets/profile-home.png" alt="">
+      <div>
+        <h3>Web designer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac.</p>
+      </div>
+    </div>
   </div>
   <div id="contact">
     <%= render 'shared/form' %>
   </div>
+  <div class="pulse pulse-two"></div>
   <div class="footer">
+    <!-- d-flex justify-content-center -->
     <div class="contact-icons">
       <i class="fab fa-github-square"></i>
       <i class="fab fa-linkedin"></i>
@@ -73,4 +98,6 @@
     </div>
     <p>Copyright by Patrycja Miękina 2021</p>
   </div>
+  </div>
+  <div class="pulse pulse-one"></div>
 </div>

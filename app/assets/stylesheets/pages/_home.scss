@@ -2,30 +2,31 @@
 
 @import "global";
 
-// .home-background {
-//   background-color: $primaryColor;
-//   border-radius: 50% 50%;
-//   width: 80%;
-//   height: 120vh;
-//   position: relative;
-//   display: inline-block;
-//   z-index: -1;
-// }
+.home-background {
+  background-color: $primaryColor;
+  border-radius: 30vh;
+  width: 50vh;
+  height: 120vh;
+  position: relative;
+  left: 15vh;
+  display: inline-block;
+  z-index: -1;
+}
 
-// .home-avatar {
-//   background-image: image_url('profile-home.png');
-//   background-position: left bottom;
-//   background-size: 100% 70%;
-//   background-repeat: no-repeat;
-//   border-radius: 50% 50%;
-//   height: 100vh;
-//   width: 80%;
-//   position: relative;
-//   bottom: 130vh;
-//   left: 10vh;
-//   z-index: 1;
-//   display: inline-block;
-// }
+.home-avatar {
+  background-image: image_url('profile-home.png');
+  background-position: left bottom;
+  background-size: 90% 70%;
+  background-repeat: no-repeat;
+  border-radius: 25vh;
+  height: 100vh;
+  width: 50vh;
+  position: relative;
+  bottom: 130vh;
+  left: 25vh;
+  z-index: 1;
+  display: inline-block;
+}
 
 .home-intro {
   font-family: $header;
@@ -42,10 +43,10 @@
   font-family: Monoton;
   font-size: 4rem;
   transform: rotate(-90deg);
-  // position: relative;
-  // right: 25vh;
-  // top: 50vh;
-  // z-index: 2;
+  position: relative;
+  right: 25vh;
+  top: 50vh;
+  z-index: 2;
 }
 
 .home-info {
@@ -96,16 +97,53 @@ p {
   justify-content: center;
 }
 
+#endorsements {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.endorsement {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 40px;
+  img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    margin-right: 16px;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 #about {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 50vh;
+    width: 50vh;
+    object-fit: cover;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
 }
 
 #contact {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.form-aligned {
+  justify-content: center;
 }

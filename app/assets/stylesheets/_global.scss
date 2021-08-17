@@ -4,3 +4,11 @@ $bgColor: #FEF1F1;
 
 $header: Merriweather;
 $text: Montserrat;
+
+body {
+  background-color: white;
+}
+
+.bg-colored {
+  background-color: $bgColor;
+}
