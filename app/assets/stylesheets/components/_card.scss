@@ -1,0 +1,60 @@
+.skill {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.skill img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 1px solid $secondaryColor;
+  border-radius: 50%;
+}
+
+.cards-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards-skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards-skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+

@@ -17,15 +17,53 @@
   <div id="work">
     <%= render 'shared/home_carousel_multiple' %>
   </div>
-  <div id="experience">
+  <div id="experience" class="row">
+    <div class="work col col-md-6 col-sm-12">
+      <div class="job">
+        <p class="date">2017</p>
+        <div class="dot"></div>
+        <div class="info">
+          <h3>Job title</h3>
+          <h5>Company</h5>
+          <p>description</p>
+        </div>
+      </div>
+    </div>
+    <div class="education col col-md-6 col-sm-12">
+      <div class="school">
+        <p class="date">2017</p>
+        <div class="dot"></div>
+        <div class="info">
+          <h3>Job title</h3>
+          <h5>School</h5>
+          <p>description</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="languages">
   </div>
-  <div id="skills">
+  <div id="skills" class="cards-skills">
+    <div class="skill card col col-lg-4 col-md-12">
+      <img src="/assets/design.png" alt="">
+      <h3>Skill</h3>
+      <p>description</p>
+    </div>
+    <div class="skill card col col-lg-4 col-md-12">
+      <img src="/assets/design.png" alt="">
+      <h3>Skill</h3>
+      <p>description</p>
+    </div>
+    <div class="skill card col col-lg-4 col-md-12">
+      <img src="/assets/design.png" alt="">
+      <h3>Skill</h3>
+      <p>description</p>
+    </div>
   </div>
   <div id="about">
   </div>
   <div id="contact">
+    <%= render 'shared/form' %>
   </div>
   <div class="footer">
     <div class="contact-icons">

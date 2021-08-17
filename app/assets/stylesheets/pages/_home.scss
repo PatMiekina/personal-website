@@ -65,3 +65,47 @@ p {
 .top-content {
   height: 100vh;
 }
+
+.job, .school {
+  display: flex;
+  justify-content: space-between;
+  margin: 20%;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: $secondaryColor;
+}
+
+#experience {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#languages {
+  height: 100vh;
+}
+
+#skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-aligned {
+}
