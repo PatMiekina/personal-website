@@ -18,7 +18,7 @@
     <%= render 'shared/home_carousel_multiple2' %>
   </div>
   <div id="experience" class="row">
-    <div class="work col col-md-6 col-sm-12">
+    <div class="work col col-12 col-md-6 col-sm-12">
       <div class="job">
         <p class="date">2017</p>
         <div class="vertical-line"></div>
@@ -26,7 +26,7 @@
         <div class="dot-img"></div>
         <div class="info">
           <h3>Job title</h3>
-          <h5>Company</h5>
+          <h6>Company</h6>
           <p>description</p>
         </div>
       </div>
@@ -39,56 +39,72 @@
         <div class="dot-img"></div>
         <div class="info">
           <h3>Job title</h3>
-          <h5>School</h5>
+          <h6>School</h6>
           <p>description</p>
         </div>
       </div>
     </div>
   </div>
   <div id="languages" class="cards-languages row">
-    <div class="language col col-lg-3 col-md-4 col-sm-6">
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
       <img src="/assets/design.png" alt="">
-      <h3>Language</h3>
+      <h5>Language</h5>
     </div>
-    <div class="language col col-lg-3 col-md-4 col-sm-6">
+    <div class="language col  col-6col-lg-3 col-md-3 col-sm-6">
       <img src="/assets/design.png" alt="">
-      <h3>Language</h3>
+      <h5>Language</h5>
     </div>
-    <div class="language col col-lg-3 col-md-4 col-sm-6">
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
       <img src="/assets/design.png" alt="">
-      <h3>Language</h3>
+      <h5>Language</h5>
     </div>
-    <div class="language col col-lg-3 col-md-4 col-sm-6">
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
       <img src="/assets/design.png" alt="">
-      <h3>Language</h3>
+      <h5>Language</h5>
+    </div>
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
+      <img src="/assets/design.png" alt="">
+      <h5>Language</h5>
+    </div>
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
+      <img src="/assets/design.png" alt="">
+      <h5>Language</h5>
+    </div>
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
+      <img src="/assets/design.png" alt="">
+      <h5>Language</h5>
+    </div>
+    <div class="language col col-6 col-lg-3 col-md-3 col-sm-6">
+      <img src="/assets/design.png" alt="">
+      <h5>Language</h5>
     </div>
   </div>
-  <div id="skills" class="cards-skills">
-    <div class="skill card col col-lg-4 col-md-12">
+  <div id="skills" class="cards-skills row">
+    <div class="skill card offset-md-1 col col-12 col-lg-3 col-md-12">
       <img src="/assets/design.png" alt="">
       <h3>Skill</h3>
       <p>description</p>
     </div>
-    <div class="skill card col col-lg-4 col-md-12">
+    <div class="skill card offset-md-1 col col-12 col-lg-3 col-md-12">
       <img src="/assets/design.png" alt="">
       <h3>Skill</h3>
       <p>description</p>
     </div>
-    <div class="skill card col col-lg-4 col-md-12">
+    <div class="skill card offset-md-1 col col-12 col-lg-3 col-md-12">
       <img src="/assets/design.png" alt="">
       <h3>Skill</h3>
       <p>description</p>
     </div>
   </div>
-  <div id="endorsements">
-    <div class="endorsement">
+  <div id="endorsements" class="row">
+    <div class="endorsement col col-12 col-lg-12">
       <img src="/assets/quote.png" alt="">
       <div class="endorsement-text">
         <p>Patrycja is creative and not afraid to experiment with ideas, good at receiving feedback. She is always dependable, organised and efficient.</p>
         <h6>Zefa Mongan, MCM Architecture</h6>
       </div>
     </div>
-    <div class="endorsement">
+    <div class="endorsement col col-12 col-lg-12">
       <img src="/assets/quote.png" alt="">
       <div class="endorsement-text">
         <p>I am impressed by how passionate, excited and inspired Patrycja is. She is always doing above and beyond. Her design is considered with attention to ‘the why’. </p>
@@ -97,11 +113,29 @@
     </div>
   </div>
   <div id="about">
-    <div class="about d-flex justify-content-space-between">
-      <img src="/assets/profile-home.png" alt="">
-      <div>
+    <div class="about row">
+      <img src="/assets/profile-home.png" alt="" class="about-img col col-12 col-md-4 col-sm-12">
+      <div class="col col-12 col-md-8 col-sm-12">
         <h3>Web designer</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac.</p>
+      </div>
+      <div class="hobbies col col-12 col-xl-12">
+        <div class="hobby">
+          <img src="/assets/design.png" alt="">
+          <h6>Design</h6>
+        </div>
+        <div class="hobby">
+          <img src="/assets/sailing.png" alt="">
+          <h6>Sailing</h6>
+        </div>
+        <div class="hobby">
+          <img src="/assets/games.png" alt="">
+          <h6>Gaming</h6>
+        </div>
+        <div class="hobby">
+          <img src="/assets/book.png" alt="">
+          <h6>Reading</h6>
+        </div>
       </div>
     </div>
   </div>
@@ -109,15 +143,7 @@
     <%= render 'shared/form' %>
   </div>
   <div class="pulse pulse-two"></div>
-  <div class="footer">
-    <!-- d-flex justify-content-center -->
-    <div class="contact-icons">
-      <a href="https://github.com/PatMiekina"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/patrycja-miekina/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/miekisz/"><i class="fab fa-facebook-square"></i></a>
-    </div>
-    <p>Copyright by Patrycja Miękina 2021</p>
-  </div>
+
   </div>
   <div class="pulse pulse-one"></div>
 </div>

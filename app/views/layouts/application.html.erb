@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Patrycja Miękina - PersonalWebsite</title>
+    <title>Patrycja Miękina - Personal Website</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;700&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/flamingo.png">
     <%= javascript_pack_tag 'carousel2' %>
     <%= javascript_pack_tag 'bg-color' %>
   </head>
@@ -19,5 +20,14 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
+    <div class="footer">
+    <!-- d-flex justify-content-center -->
+    <div class="contact-icons">
+      <a href="https://github.com/PatMiekina"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.linkedin.com/in/patrycja-miekina/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/miekisz/"><i class="fab fa-facebook-square"></i></a>
+    </div>
+    <p>Copyright by Patrycja Miękina 2021</p>
+  </div>
   </body>
 </html>
