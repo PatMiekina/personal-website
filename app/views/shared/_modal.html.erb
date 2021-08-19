@@ -1,20 +1,24 @@
-<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="projectModalLabel">Procject title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<% @projects.each do |project| %>
+
+  <div class="modal fade" id="projectModal-<%= project.id %>" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel"><%= project.title %></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <%= cl_image_tag project.photo.key, height: 300, width: 300, crop: :fit %>
+          <p><%= project.description %></p>
+          <h6>Skills:</h6>
+          <h6>Languages:</h6>
+          <%= link_to "Learn more", dress_to_impress_path, class:"btn btn-main" %>
+          <%= link_to "Launch website", "https://pm-dress-to-impress.herokuapp.com/", class:"btn btn-secondary" %>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
       </div>
-      <div class="modal-body">
-        <%= image_tag "logo.png" %>
-        <p>Short project description</p>
-        <h6>Skills:</h6>
-        <h6>Languages:</h6>
-        <%= link_to "Learn more", dress_to_impress_path, class:"btn btn-main" %>
-        <%= link_to "Launch website", "https://pm-dress-to-impress.herokuapp.com/", class:"btn btn-secondary" %>
-      </div>
-      <!-- <div class="modal-footer">
-      </div> -->
     </div>
   </div>
-</div>
+
+<% end %>
