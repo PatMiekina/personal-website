@@ -10,6 +10,12 @@ Attribution required
   padding: 0 24px;
 }
 
+.carousel-item a {
+  :hover {
+    cursor: pointer;
+  }
+}
+
 
 
 .img-fluid {
