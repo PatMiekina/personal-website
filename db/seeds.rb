@@ -27,9 +27,11 @@ ux = Skill.create(name: "User Experience")
 
 
 gardnr = Project.new(title: "Gardnr", description: "A marketplace style app allowing to rent gardens for any occasion!")
-gardnr.skills = [teamwork, time, co_ord, problems, ui, ux]
-gardnr.techstacks = [ruby, rails, html, css, sql, javascript, figma, photoshop]
+# gardnr.skills = [teamwork, time, co_ord, problems, ui, ux]
+# gardnr.techstacks = [ruby, rails, html, css, sql, javascript, figma, photoshop]
+gardnr.save
 
 dress = Project.new(title: "Dress To Impress", description: "Have you ever felt you have nothing to wear? A big event coming up and you're short on cash? Dress To Impress is your solution! Rent dresses near you, for any occasion, without straining your budget!")
-dress.skills = [time, co_ord, problems, ui, ux]
-dress.techstacks = [ruby, rails, html, css, sql, javascript, figma, photoshop]
+# dress.skills = [time, co_ord, problems, ui, ux]
+# dress.techstacks = [ruby, rails, html, css, sql, javascript, figma, photoshop]
+dress.save
