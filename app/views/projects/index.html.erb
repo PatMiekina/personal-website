@@ -1,0 +1,13 @@
+<div class="top-margin">
+  <%= link_to "New", new_project_path %>
+  <% @projects.each do |project| %>
+    <%= link_to "Edit", edit_project_path(project) %>
+    <%= link_to project_path(project) do %>
+      <h2><%= project.title %></h2>
+    <% end %>
+    <% if project.photo.attached? %>
+      <%= cl_image_tag project.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+    <p><%= project.description %></p>
+  <% end %>
+</div>
