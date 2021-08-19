@@ -13,4 +13,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def gardnr
+  end
+
+  def dress_to_impress
+  end
 end

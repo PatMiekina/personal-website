@@ -2,7 +2,7 @@
 
 @import "global";
 #home {
-  height: 100vh;
+  // height: 100vh;
 }
 .home-background {
   background-color: $primaryColor;
@@ -63,7 +63,7 @@ p {
 
 #work {
   // background-color: $bgColor;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .top-content {
@@ -111,7 +111,7 @@ p {
 #experience {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  // height: 100vh;
   .info {
     // padding-left: 80px;
     // padding-left: 30%;
@@ -120,7 +120,7 @@ p {
 }
 
 #languages {
-  height: 100vh;
+  // height: 100vh;
   margin: auto 0;
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@ p {
 }
 
 #endorsements {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -161,7 +161,7 @@ p {
 
 #about {
   padding-top: 5%;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -194,7 +194,7 @@ p {
 }
 
 #contact {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,5 +210,18 @@ p {
   }
   p {
     font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #home, #work, #experience, #endorsements, #skills, #languages, #about, #contact {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #home, #work, #experience, #endorsements, #skills, #languages, #about, #contact {
+    margin: 2rem 0;
+    display: block;
   }
 }

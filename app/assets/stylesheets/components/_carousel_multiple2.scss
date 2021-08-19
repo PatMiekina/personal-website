@@ -5,14 +5,12 @@ Attribution required
 
 */
 .carousel-inner {
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
   padding: 0 24px;
 }
 
-.carousel-item {
-  height: 100vh;
-}
+
 
 .img-fluid {
   background-color: white;
@@ -27,6 +25,12 @@ Attribution required
   &:hover {
     transform: scale(1.15);
   }
+}
+
+@media (min-width: 768px) {
+  .carousel-item, .carousel-inner {
+  height: 100vh;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
