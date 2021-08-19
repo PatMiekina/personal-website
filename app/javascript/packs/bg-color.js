@@ -1,8 +1,14 @@
+const initBgColor = () => {
+
 document.addEventListener("scroll", (e) => {
   if (document.scrollTop >= document.querySelector("#work").top) {
   document.querySelector('body').classList.add('bg-colored');
 }
 });
+
+};
+
+export { initBgColor };
 
 // touchmove
 

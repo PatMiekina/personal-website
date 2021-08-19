@@ -1,3 +1,6 @@
+
+const initCarousel = () => {
+
 $('#carouselExample').on('slide.bs.carousel', function (e) {
 
     var $e = $(e.relatedTarget);
@@ -18,3 +21,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         }
     }
 });
+
+};
+
+export { initCarousel };
