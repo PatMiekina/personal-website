@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @project_save
+    if @project.save
       redirect_to project_path(@project)
     else
       render :new
@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
 
   def update
     @project.update(project_params)
-    if @project_save
+    if @project.save
       redirect_to project_path(@project)
     else
       render :edit
@@ -42,6 +42,6 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :photo)
+    params.require(:project).permit(:title, :description, :photo, :path, :website)
   end
 end
