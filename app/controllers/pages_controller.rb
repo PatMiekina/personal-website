@@ -24,4 +24,6 @@ class PagesController < ApplicationController
   def dress_to_impress
     @project = Project.all.second
   end
+
+
 end
