@@ -25,6 +25,10 @@ class PagesController < ApplicationController
     @project = Project.all.second
   end
 
+  def the_pulse
+    @project = Project.all.third
+  end
+
   def download_pdf
     send_file "#{Rails.root}/app/assets/docs/CV.pdf", type: "application/pdf", x_sendfile: true
   end

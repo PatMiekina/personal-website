@@ -228,6 +228,11 @@ p {
   }
 }
 
+.wip {
+  padding-top: 30%;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   #home, #work, #experience, #endorsements, #skills, #languages, #about, #contact {
     height: 100vh;
